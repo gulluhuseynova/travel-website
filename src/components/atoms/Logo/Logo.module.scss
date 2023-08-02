@@ -1,0 +1,25 @@
+$fontSize: 24px;
+$fontPoppin: 'Poppins', sans-serif;
+
+@mixin font-style {
+    font-size: $fontSize;
+    font-family: $fontPoppin;
+    font-weight: 600;
+}
+
+#a {
+    text-decoration: none;
+    align-self: center;
+}
+
+#firstSixLetters {
+    text-transform: uppercase;
+    color: #166527;
+    @include font-style;
+}
+
+#otherSixLetters {
+    text-transform: uppercase;
+    color: #1a3724;
+    @include font-style;
+}
