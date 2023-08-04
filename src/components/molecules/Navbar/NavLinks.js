@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import classes from './Navbar.module.css'
 import { motion } from 'framer-motion'
 
 const NavLinks = (props) => {
@@ -13,7 +13,9 @@ const NavLinks = (props) => {
                 transition={{ delay: 0.05 }}
                 onClick={() => props.isMobile && props.closeMobileMenu()}
             >
-                <a href="#/cabins">Our cabins</a>
+                <a className={classes.navbar_links} href="#/cabins">
+                    Our cabins
+                </a>
             </motion.li>
             <motion.li
                 initial={animateFrom}
@@ -21,7 +23,9 @@ const NavLinks = (props) => {
                 transition={{ delay: 0.1 }}
                 onClick={() => props.isMobile && props.closeMobileMenu()}
             >
-                <a href="#/inpired">Get inspired</a>
+                <a className={classes.navbar_links} href="#/inpired">
+                    Get inspired
+                </a>
             </motion.li>
             <motion.li
                 initial={animateFrom}
@@ -29,7 +33,9 @@ const NavLinks = (props) => {
                 transition={{ delay: 0.2 }}
                 onClick={() => props.isMobile && props.closeMobileMenu()}
             >
-                <a href="#/gift">Gift a stay</a>
+                <a className={classes.navbar_links} href="#/gift">
+                    Gift a stay
+                </a>
             </motion.li>
             <motion.li
                 initial={animateFrom}
@@ -37,7 +43,9 @@ const NavLinks = (props) => {
                 transition={{ delay: 0.3 }}
                 onClick={() => props.isMobile && props.closeMobileMenu()}
             >
-                <a href="#/about">About us</a>
+                <a className={classes.navbar_links} href="#/about">
+                    About us
+                </a>
             </motion.li>
         </ul>
     )

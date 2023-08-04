@@ -31,6 +31,9 @@
     display: none;
 }
 
+.navbar_links:hover {
+    border-bottom: 2px solid rgb(7, 37, 7);
+}
 @media (max-width: 990px) {
     .navbar .Navigation {
         display: none;
@@ -38,6 +41,8 @@
     .navbar .MobileNavigation {
         display: flex;
         align-items: center;
+        z-index: 4;
+        opacity: 0.9;
     }
     .navbar .MobileNavigation .Hamburger {
         position: absolute;

@@ -1,0 +1,22 @@
+.star_rating_wrapper {
+    display: flex;
+    position: absolute;
+    bottom: 95px;
+    left: 300px;
+}
+
+.rating_score {
+    margin-left: 5px;
+    color: white;
+}
+
+@media (max-width: 550px) {
+    .star_rating_wrapper {
+        top: 144px;
+        left: 170px;
+    }
+    .rating_score {
+        font-size: 12px;
+        margin-top: 2px;
+    }
+}
