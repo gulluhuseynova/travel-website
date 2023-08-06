@@ -19,7 +19,7 @@ export const Ratings = () => {
             <div className={classes.trust_pilot}>
                 <img src={Images.trustPilot}></img>
             </div>
-            <StarRating/>
+            <StarRating />
         </>
     )
 }

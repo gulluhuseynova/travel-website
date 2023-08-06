@@ -12,7 +12,7 @@ const StarRating = () => {
     return (
         <div className={classes.star_rating_wrapper}>
             <div>
-                {[...Array(5)].map((_, index) => (
+                {[...Array(5).keys()].map((index) => (
                     <Star
                         key={index}
                         selected={index < rating}

@@ -1,13 +1,22 @@
 import React from 'react'
-import { Card, Col, Row } from 'antd'
-const SearchBar = () => {
-    return (
-        <Row gutter={16} style={{margin:0}}>
-            <Col span={8}>
-                <Card bordered={true}>Card content</Card>
-            </Col>
-        </Row>
-    )
-}
+import classes from './SearchBar.module.css'
+import TimePicker from '../DatePicker/TimePicker'
+import { Button } from 'antd'
+import CabinBtn from '../../atoms/CabinBtn/CabinBtn'
 
-export default SearchBar
+const App = () => (
+    <div className={classes.searchBar_wrapper}>
+        <div className={classes.searchBar_card}>
+            <div>
+                <TimePicker />
+            </div>
+            <div className={classes.travel_btn_wrapper}>
+                <Button className={classes.travel_btn}>Travellers</Button>
+            </div>
+            <div>
+                <CabinBtn />
+            </div>
+        </div>
+    </div>
+)
+export default App

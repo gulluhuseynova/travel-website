@@ -1,0 +1,70 @@
+.cabin_title {
+    margin: 50px 80px 30px 80px;
+}
+.cabin_title h2 {
+    font-family: 'Source Serif 4', serif;
+}
+.cabin_link_wrapper {
+    text-align: center;
+    margin: 20px 80px;
+}
+
+.link_title {
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    color: #47475f;
+}
+.link {
+    text-align: right;
+    font-family: 'Poppins', sans-serif;
+}
+.link a {
+    color: black;
+    border-bottom: 1px solid black;
+}
+.link a:hover {
+    color: grey;
+}
+
+.discover {
+    border-bottom: 2px solid #f5b963;
+    margin-right: 5px;
+}
+
+@media (max-width: 767px) {
+    .cabin_title {
+        margin: 10px;
+    }
+    .cabin_title h2 {
+        font-size: 16px;
+    }
+    .cabin_link_wrapper {
+        margin: 10px;
+    }
+    .link_title {
+        white-space: normal !important;
+        text-align: left;
+    }
+
+    .link {
+        text-align: right;
+    }
+}
+
+@media (min-width: 768px) {
+    .cabin_title {
+        margin: 10px 40px;
+    }
+    .cabin_link_wrapper {
+        margin: 20px 40px;
+    }
+}
+
+@media (min-width: 992px) {
+    .cabin_title {
+        margin: 50px 80px 30px 80px;
+    }
+    .cabin_link_wrapper {
+        margin: 20px 80px;
+    }
+}

@@ -1,0 +1,35 @@
+.searchBar_wrapper {
+    position: absolute;
+    bottom: -25px;
+    left: 230px;
+}
+.searchBar_card {
+    display: flex;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: white;
+    padding: 10px;
+}
+.travel_btn {
+    margin-left: 5px;
+    background: #233d2c;
+    color: white;
+
+}
+@media (max-width: 767px) {
+    .searchBar_wrapper {
+       display: none;
+    }
+  
+}
+@media (max-width: 1200px) {
+    .searchBar_wrapper {
+       display: none;
+    }
+  
+}
+@media (min-width: 1200px) {
+    .searchBar_wrapper {
+       display: block;
+    }
+  
+}

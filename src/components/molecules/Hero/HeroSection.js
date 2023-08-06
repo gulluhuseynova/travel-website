@@ -38,9 +38,9 @@ const HeroSection = () => {
                         alt="Hero"
                     ></img>
                 </div>
-                <div className={classes.empty_div}></div>
+                <div className={classes.gradient}></div>
+                <SearchBar />
             </div>
-            <SearchBar />
         </>
     )
 }

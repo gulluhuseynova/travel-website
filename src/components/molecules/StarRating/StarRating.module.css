@@ -10,7 +10,7 @@
     color: white;
 }
 
-@media (max-width: 550px) {
+@media (max-width: 767px) {
     .star_rating_wrapper {
         top: 144px;
         left: 170px;
