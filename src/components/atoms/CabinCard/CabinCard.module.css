@@ -1,0 +1,36 @@
+.card_style {
+    background: #2b3030;
+    border-left: 2px solid #596363;
+    border-right: 2px solid #596363;
+}
+
+.header {
+    color: #d7fff1;
+    font-family: 'Poppins', sans-serif;
+}
+.title {
+    color: white;
+    font-family: 'Source Serif 4', serif;
+    font-size: 16px;
+}
+.description {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+@media (max-width: 767px) {
+    .card_style {
+        margin: 10px;
+    }
+    .header {
+        font-size: 10px;
+    }
+    .title {
+        font-size: 14px;
+    }
+    .description {
+        font-size: 12px;
+    }
+}

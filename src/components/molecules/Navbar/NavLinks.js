@@ -1,7 +1,9 @@
 import classes from './Navbar.module.css'
 import { motion } from 'framer-motion'
+import { useTranslation } from 'react-i18next'
 
 const NavLinks = (props) => {
+    const { t,i18n } = useTranslation()
     const animateFrom = { opacity: 0, y: -40 }
     const animateTo = { opacity: 1, y: 0 }
 
@@ -14,7 +16,7 @@ const NavLinks = (props) => {
                 onClick={() => props.isMobile && props.closeMobileMenu()}
             >
                 <a className={classes.navbar_links} href="#/cabins">
-                    Our cabins
+                   {t('our_cabins')}
                 </a>
             </motion.li>
             <motion.li

@@ -1,5 +1,5 @@
 .cabin_title {
-    margin: 50px 80px 30px 80px;
+    margin: 0 80px;
 }
 .cabin_title h2 {
     font-family: 'Source Serif 4', serif;
@@ -33,7 +33,8 @@
 
 @media (max-width: 767px) {
     .cabin_title {
-        margin: 10px;
+        margin: 0 10px;
+        padding-top: 30px;
     }
     .cabin_title h2 {
         font-size: 16px;
@@ -53,7 +54,8 @@
 
 @media (min-width: 768px) {
     .cabin_title {
-        margin: 10px 40px;
+        margin: 0 40px;
+        padding-top: 40px;
     }
     .cabin_link_wrapper {
         margin: 20px 40px;
@@ -62,7 +64,8 @@
 
 @media (min-width: 992px) {
     .cabin_title {
-        margin: 50px 80px 30px 80px;
+        margin: 0 80px 30px;
+        padding-top: 40px;
     }
     .cabin_link_wrapper {
         margin: 20px 80px;

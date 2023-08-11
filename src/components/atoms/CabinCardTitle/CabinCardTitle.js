@@ -4,12 +4,12 @@ import classes from './CabinCardTitle.module.css'
 
 const CabinCardTitle = () => {
     return (
-        <div className={classes.wrapper}>
+        <div>
             <Row className={classes.cabin_title}>
                 <Col span={24}>
                     <h2>
-                        <span className={classes.discover}>Discover</span>
-                        our idyllic countryside cabins
+                        <span className={classes.discover}>Inspiration</span>
+                        for your next getaway
                     </h2>
                 </Col>
             </Row>
@@ -19,16 +19,13 @@ const CabinCardTitle = () => {
                         style={{ whiteSpace: 'nowrap' }}
                         className={classes.link_title}
                     >
-                        Fully equipped kitchen and bathroom with plenty of
-                        walking and cycling routes to explore.
+                        We’ve curated some amazing experiences to help you find
+                        your next getaway.
                     </p>
                 </Col>
                 <Col span={12} className={classes.link}>
-                    <a href="#">View all cabins</a>
+                    <a href="#">View all experiences</a>
                 </Col>
-            </Row>
-            <Row>
-                <Col span={24}>salam</Col>
             </Row>
         </div>
     )
