@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 import { useTranslation } from 'react-i18next'
 
 const NavLinks = (props) => {
-    const { t,i18n } = useTranslation()
+    const { t, i18n } = useTranslation()
     const animateFrom = { opacity: 0, y: -40 }
     const animateTo = { opacity: 1, y: 0 }
 
@@ -16,7 +16,7 @@ const NavLinks = (props) => {
                 onClick={() => props.isMobile && props.closeMobileMenu()}
             >
                 <a className={classes.navbar_links} href="#/cabins">
-                   {t('our_cabins')}
+                    {t('our_cabins')}
                 </a>
             </motion.li>
             <motion.li
@@ -26,7 +26,7 @@ const NavLinks = (props) => {
                 onClick={() => props.isMobile && props.closeMobileMenu()}
             >
                 <a className={classes.navbar_links} href="#/inpired">
-                    Get inspired
+                    {t('get_inspired')}
                 </a>
             </motion.li>
             <motion.li
@@ -36,7 +36,7 @@ const NavLinks = (props) => {
                 onClick={() => props.isMobile && props.closeMobileMenu()}
             >
                 <a className={classes.navbar_links} href="#/gift">
-                    Gift a stay
+                    {t('gift_a_stay')}
                 </a>
             </motion.li>
             <motion.li
@@ -46,7 +46,7 @@ const NavLinks = (props) => {
                 onClick={() => props.isMobile && props.closeMobileMenu()}
             >
                 <a className={classes.navbar_links} href="#/about">
-                    About us
+                    {t('about_us')}
                 </a>
             </motion.li>
         </ul>

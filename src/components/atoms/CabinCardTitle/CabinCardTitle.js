@@ -1,30 +1,33 @@
 import React from 'react'
 import { Row, Col } from 'antd'
 import classes from './CabinCardTitle.module.css'
+import { useTranslation } from 'react-i18next'
 
 const CabinCardTitle = () => {
+    const { t } = useTranslation()
+
     return (
         <div>
             <Row className={classes.cabin_title}>
                 <Col span={24}>
                     <h2>
-                        <span className={classes.discover}>Inspiration</span>
-                        for your next getaway
+                        <span className={classes.discover}>
+                            {t('cabin_inspiration')}
+                        </span>
+                        {t('cabin_inspo')}
                     </h2>
                 </Col>
             </Row>
             <Row className={classes.cabin_link_wrapper}>
                 <Col span={12}>
                     <p
-                        style={{ whiteSpace: 'nowrap' }}
                         className={classes.link_title}
                     >
-                        We’ve curated some amazing experiences to help you find
-                        your next getaway.
+                        {t('cabin_link_title')}
                     </p>
                 </Col>
                 <Col span={12} className={classes.link}>
-                    <a href="#">View all experiences</a>
+                    <a href="#">{t('cabin_link')}</a>
                 </Col>
             </Row>
         </div>

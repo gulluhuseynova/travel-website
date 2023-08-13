@@ -3,28 +3,28 @@ import CabinCardTitle from './../../atoms/CabinCardTitle/CabinCardTitle'
 import CabinCard from '../../atoms/CabinCard/CabinCard'
 import Images from '../../../assets/images/Images'
 import classes from './CabinCards.module.css'
+import { useTranslation } from 'react-i18next'
 
 const CabinCards = () => {
+    const { t } = useTranslation()
+
     const infoList = [
         {
-            header: 'For those who love',
-            title: 'To Explore nature',
-            description:
-                'Discover some of the most beautiful scenery – from the wonders of Snowdonia to the famous beauty of the Scottish Highlands.',
+            header: t('cabin_cards_header'),
+            title: t('cabin_cards_title'),
+            description: t('cabin_cards_description'),
             img: Images.first,
         },
         {
-            header: 'For those who want',
-            title: 'To Relax, rest & re-set',
-            description:
-                'Experience mind and body connection through breathing exercises and relaxation with our Yoga inspired get away for you and the family.',
+            header: t('cabin_cards_second_header'),
+            title: t('cabin_cards_second_title'),
+            description: t('cabin_cards_second_description'),
             img: Images.second,
         },
         {
-            header: 'For those who have',
-            title: 'Four-legged friends',
-            description:
-                'When going on holiday nobody wants to put their dog in a kennel. So, lets keep the family together with our pet friendly cabins.',
+            header: t('cabin_cards_third_header'),
+            title: t('cabin_cards_third_title'),
+            description: t(t('cabin_cards_third_description')),
             img: Images.third,
         },
     ]

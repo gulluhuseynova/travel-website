@@ -4,8 +4,11 @@ import '../../../assets/fonts/Fonts.scss'
 import classes from './HeroSection.module.css'
 import SearchBar from '../SearchBar/SearchBar'
 import { Ratings } from '../../atoms/Ratings/Ratings'
+import { useTranslation } from 'react-i18next'
 
 const HeroSection = () => {
+    const { t } = useTranslation()
+
     return (
         <>
             <div className={classes.container}>
@@ -13,20 +16,20 @@ const HeroSection = () => {
                     <div className={classes.hero_title}>
                         <h2>
                             <span>
-                                Leave the office behind <br />
-                                and
+                                {t('hero_title')} <br />
+                                {t('hero_and')}
                             </span>
                             <span className={classes.hero_title_yellow}>
-                                unwind
+                                {t('hero_unwind')}
                             </span>
                         </h2>
                     </div>
                     <div className={classes.hero_caption}>
                         <p>
-                            Welcome to our cozy cabin nestled in the heart of
-                            the mountains! <br /> Our cabin is the perfect
-                            getaway for those seeking peace and <br />
-                            relaxation in a natural setting.
+                            {t('first_hero_caption')} <br />
+                            {t('second_hero_caption')}
+                            {t('third_hero_caption')} <br />
+                           {t("fourth_hero_caption")}
                         </p>
                     </div>
                 </div>

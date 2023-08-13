@@ -19,7 +19,7 @@ const CabinCard = (props) => {
                 >
                     <Card
                         hoverable
-                        style={{ width: 245, minHeight: '450px' }}
+                        style={{ width: 250, minHeight: '470px' }}
                         className={classes.card_style}
                         cover={
                             <img

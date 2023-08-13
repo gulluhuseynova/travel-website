@@ -13,23 +13,22 @@
     margin-left: 5px;
     background: #233d2c;
     color: white;
-
 }
 @media (max-width: 767px) {
     .searchBar_wrapper {
-       display: none;
+        display: none;
     }
-  
 }
-@media (max-width: 1200px) {
+@media (min-width: 768px) {
     .searchBar_wrapper {
-       display: none;
+        display: none;
     }
-  
 }
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
     .searchBar_wrapper {
-       display: block;
+        display: block;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -20%);
     }
-  
 }
