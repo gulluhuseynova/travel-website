@@ -8,6 +8,8 @@ import './utility/utility.js'
 import { useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
 import { setLangFromLocalStorage } from './utility/utility.js'
+import About from './components/molecules/About/About'
+import Footer from './components/molecules/Footer/Footer'
 
 const App = () => {
     const { i18n } = useTranslation()
@@ -20,7 +22,9 @@ const App = () => {
             <HeroSection />
             <CabinCards />
             <ReviewSection />
-            <LangSwitch />
+            <About />
+            <Footer />
+            
         </div>
     )
 }

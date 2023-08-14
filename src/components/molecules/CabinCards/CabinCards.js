@@ -30,7 +30,7 @@ const CabinCards = () => {
     ]
 
     return (
-        <div className={classes.wrapper}>
+        <div className={classes.wrapper} id='inspired'>
             <CabinCardTitle />
             <CabinCard infoList={infoList} />
         </div>

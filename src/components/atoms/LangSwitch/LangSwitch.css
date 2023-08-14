@@ -1,34 +1,33 @@
 .react-tel-input {
-    font-family: "Roboto", sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 15px;
     position: relative;
     width: 100%;
-  }
-  .react-tel-input :disabled {
+}
+.react-tel-input :disabled {
     cursor: not-allowed;
-  }
-  .flag {
+}
+.flag {
     width: 25px;
     height: 20px;
-    background-image: url("https://raw.githubusercontent.com/bl00mber/react-phone-input-2/master/src/style/common/high-res.png");
+    background-image: url('https://raw.githubusercontent.com/bl00mber/react-phone-input-2/master/src/style/common/high-res.png');
     background-repeat: no-repeat;
-  }
-  
-  .az {
+}
+
+.az {
     background-position: -24px -48px;
-  }
-  .gb {
+}
+.gb {
     background-position: -240px -120px;
-  }
-  
-  * {
+}
+
+* {
     box-sizing: border-box;
     -moz-box-sizing: border-box;
-  }
-  .hide {
+}
+.hide {
     display: none;
-  }
-  .v-hide {
+}
+.v-hide {
     visibility: hidden;
-  }
-  
+}

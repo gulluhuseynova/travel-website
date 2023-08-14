@@ -1,0 +1,40 @@
+.about_wrapper {
+    padding: 0 60px;
+    height: 559px;
+    margin: 0 !important;
+}
+
+.img {
+    width: 100%;
+    height: auto;
+    box-shadow: 10px 10px 5px #aaaaaa;
+}
+.detail {
+    position: absolute;
+    right: -45px;
+    top: -45px;
+    z-index: -1;
+}
+.img_wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.play_icon {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+}
+
+.about_title {
+    font-family: 'Source Serif 4', serif;
+    margin-bottom: 20px;
+}
+.about_caption {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+}

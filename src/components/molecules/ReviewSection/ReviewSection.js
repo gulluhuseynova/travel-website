@@ -4,6 +4,7 @@ import classes from './ReviewSection.module.css'
 import { useTranslation } from 'react-i18next'
 import { useState } from 'react'
 import Star from '../../atoms/Star/Star'
+import { Button } from 'antd'
 
 const ReviewSection = () => {
     const [rating, setRating] = useState(0)
@@ -13,7 +14,7 @@ const ReviewSection = () => {
     }
     const { t } = useTranslation()
     return (
-        <div className={classes.wrapper}>
+        <div className={classes.wrapper} id="review">
             <img className={classes.wrapper} src={Images.purplewoman}></img>
             <div className={classes.title_wrapper}>
                 <div className={classes.review_wrapper}>
@@ -42,6 +43,7 @@ const ReviewSection = () => {
                         </div>
                         <div style={{ color: 'white' }}>01 Jan 2023</div>
                     </div>
+                    <Button className={classes.gift}>{t('gift')}</Button>
                 </div>
             </div>
             <div className={classes.mobile_title_wrapper}>
