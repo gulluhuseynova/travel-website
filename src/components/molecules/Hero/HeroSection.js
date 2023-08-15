@@ -1,6 +1,6 @@
 import React from 'react'
 import Images from '../../../assets/images/Images'
-import '../../../assets/fonts/Fonts.scss'
+import '../../../assets/fonts/Fonts.css'
 import classes from './HeroSection.module.css'
 import SearchBar from '../SearchBar/SearchBar'
 import { Ratings } from '../../atoms/Ratings/Ratings'
