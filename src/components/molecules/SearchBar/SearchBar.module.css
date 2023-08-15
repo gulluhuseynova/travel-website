@@ -13,7 +13,13 @@
     margin-left: 5px;
     background: #233d2c;
     color: white;
+    border: none;
 }
+
+.travel_btn:hover {
+    color: #f5b963 !important;
+}
+
 @media (max-width: 767px) {
     .searchBar_wrapper {
         display: none;

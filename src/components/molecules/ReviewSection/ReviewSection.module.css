@@ -30,20 +30,19 @@
     display: flex;
 }
 
-.gift {
+.gift_btn {
     border: none;
-    border-color: #233d2c;
-    color: #fff;
-    box-shadow: 0 0 40px 40px #546956 inset, 0 0 0 0 #546956;
-    transition: all 350ms ease-in-out;
+    color: #f5b963;
+    box-shadow: 0 0 40px 40px #233d2c inset, 0 0 0 0 #233d2c;
+    transition: all 250ms ease-in-out;
     font-family: 'Poppins', sans-serif;
     margin-top: 10px;
 }
 
-.gift:hover {
-    box-shadow: 0 0 4px 0 #546956 inset, 0 0 8px 2px #546956;
+.gift_btn:hover {
+    border: none;
+    box-shadow: 0 0 4px 0 #233d2c inset, 0 0 8px 2px #233d2c;
     color: black !important;
-    color: #234d2c;
 }
 
 @media (max-width: 550px) {

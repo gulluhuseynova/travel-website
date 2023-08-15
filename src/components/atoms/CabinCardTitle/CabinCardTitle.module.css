@@ -35,20 +35,25 @@
     .cabin_title {
         margin: 0 10px;
         padding-top: 30px;
+        text-align: center;
     }
     .cabin_title h2 {
         font-size: 16px;
     }
     .cabin_link_wrapper {
         margin: 10px;
+        justify-content: center;
     }
-    .link_title {
-        white-space: normal !important;
-        text-align: left;
-    }
-
     .link {
-        text-align: right;
+        white-space: nowrap;
+        font-size: 12px;
+        text-align: center;
+    }
+    .link_col {
+        display: none;
+    }
+    .discover {
+        border-bottom: none;
     }
 }
 

@@ -1,6 +1,6 @@
 {
     "our_cabins": "Kabinlerimiz",
-    "get_inspired": "İlham almak",
+    "get_inspired": "İlham al",
     "gift_a_stay": "Konaklama hediye et",
     "about_us": "Hakkımızda",
     "hero_title": "Ofisi geride bırakın",
@@ -31,6 +31,22 @@
     "review_descrip_4": "Burada her şeyi en ince ayrıntısına kadar düşünmüşler.",
     "about_title": "Rahatlamaya hazır olun",
     "about_caption": "Bir kabin kaçamağı, dinlenmek ve doğayla tekrar bağlantı kurmak için harika bir yol olabilir.Birçok kabin kiralama, ağaçlar ve diğer doğal güzelliklerle çevrili, güzel ve tenha alanlarda yer almaktadır. Bir kabin kaçamağı, günlük yaşamın telaşından kaçmak ve doğayla tekrar bağlantı kurmanın harika bir yolu olabilir.",
-    "gift":"Konaklama hediye et"
-
+    "gift": "Konaklama hediye et",
+    "support": "Destek",
+    "story": "Hikayemiz",
+    "why_us": "Neden Biz",
+    "how_it_works": "Süreç",
+    "faq": "Sıkça Sorulan Sorular",
+    "explore_nature": "Doğayı keşfet",
+    "hiking_trails": "Yürüyüş parkurları",
+    "swimming": "Yüzme",
+    "fishing": "Balık avı",
+    "boating": "Tekne gezisi",
+    "cycling": "Bisiklet sürme",
+    "help": "Yardım",
+    "contact": "İletişim",
+    "privacy_policy": "Gizlilik Politikası",
+    "terms_of_service": "Hizmet Koşulları",
+    "complaints_policy": "Şikayet Politikası",
+    "mail_btn": "Posta listesine üye ol"
 }

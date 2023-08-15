@@ -13,8 +13,9 @@ const ReviewSection = () => {
         setRating(index + 1)
     }
     const { t } = useTranslation()
+
     return (
-        <div className={classes.wrapper} id="review">
+        <div className={`${classes.wrapper} offset-2`} id="review">
             <img className={classes.wrapper} src={Images.purplewoman}></img>
             <div className={classes.title_wrapper}>
                 <div className={classes.review_wrapper}>
@@ -43,7 +44,7 @@ const ReviewSection = () => {
                         </div>
                         <div style={{ color: 'white' }}>01 Jan 2023</div>
                     </div>
-                    <Button className={classes.gift}>{t('gift')}</Button>
+                    <Button className={classes.gift_btn}>{t('gift')}</Button>
                 </div>
             </div>
             <div className={classes.mobile_title_wrapper}>

@@ -13,62 +13,62 @@ const Footer = () => {
         <div className={classes.footer_wrapper}>
             <Row className={classes.links_wrapper}>
                 <Col span={6}>
-                    <Row gutter={[8, 8]}>
-                        <Col span={24}>
-                            <h2 className={classes.links_header} to="/#">
-                                About us
+                    <Row className={classes.footer_gutter}>
+                        <Col span={24} className={classes.links_header_about}>
+                            <h2 className={classes.links_header}>
+                                {t('about_us')}
                             </h2>
                         </Col>
-                        <Col span={24}>
+                        <Col span={24} className={classes.links_col}>
                             <Link to="/#" className={classes.links}>
-                                Our story
+                                {t('story')}
                             </Link>
                         </Col>
-                        <Col span={24}>
+                        <Col span={24} className={classes.links_col}>
                             <Link to="/#" className={classes.links}>
-                                Why us
+                                {t('why_us')}
                             </Link>
                         </Col>
-                        <Col span={24}>
+                        <Col span={24} className={classes.links_col}>
                             <Link to="/#" className={classes.links}>
-                                How it works
+                                {t('how_it_works')}
                             </Link>
                         </Col>
-                        <Col span={24}>
+                        <Col span={24} className={classes.links_col}>
                             <Link to="/#" className={classes.links}>
-                                FAQ
+                                {t('faq')}
                             </Link>
                         </Col>
                     </Row>
                 </Col>
                 <Col span={6}>
-                    <Row gutter={[8, 8]}>
+                    <Row>
                         <Col span={24}>
-                            <h2 className={classes.links_header} to="/#">
-                                Our cabins
+                            <h2 className={classes.links_header}>
+                                {t('our_cabins')}
                             </h2>
                         </Col>
-                        <Col span={24}>
+                        <Col span={24} className={classes.links_col}>
                             <Link to="/#" className={classes.links}>
                                 North of London
                             </Link>
                         </Col>
-                        <Col span={24}>
+                        <Col span={24} className={classes.links_col}>
                             <Link to="/#" className={classes.links}>
                                 Golden Hideaway
                             </Link>
                         </Col>
-                        <Col span={24}>
+                        <Col span={24} className={classes.links_col}>
                             <Link to="/#" className={classes.links}>
                                 Oak Treehouse
                             </Link>
                         </Col>
-                        <Col span={24}>
+                        <Col span={24} className={classes.links_col}>
                             <Link to="/#" className={classes.links}>
                                 Acacia Retreat
                             </Link>
                         </Col>
-                        <Col span={24}>
+                        <Col span={24} className={classes.links_col}>
                             <Link to="/#" className={classes.links}>
                                 Blue Lagoon
                             </Link>
@@ -76,74 +76,74 @@ const Footer = () => {
                     </Row>
                 </Col>
                 <Col span={6}>
-                    <Row gutter={[8, 8]}>
+                    <Row>
                         <Col span={24}>
-                            <h2 className={classes.links_header} to="/#">
-                                Get inspired
+                            <h2 className={classes.links_header}>
+                                {t('get_inspired')}
                             </h2>
                         </Col>
-                        <Col span={24}>
+                        <Col span={24} className={classes.links_col}>
                             <Link to="/#" className={classes.links}>
-                                Explore nature
+                                {t('explore_nature')}
                             </Link>
                         </Col>
-                        <Col span={24}>
+                        <Col span={24} className={classes.links_col}>
                             <Link to="/#" className={classes.links}>
-                                Hiking trails
+                                {t('hiking_trails')}
                             </Link>
                         </Col>
-                        <Col span={24}>
+                        <Col span={24} className={classes.links_col}>
                             <Link to="/#" className={classes.links}>
-                                Swimming
+                                {t('swimming')}
                             </Link>
                         </Col>
-                        <Col span={24}>
+                        <Col span={24} className={classes.links_col}>
                             <Link to="/#" className={classes.links}>
-                                Fishing
+                                {t('fishing')}
                             </Link>
                         </Col>
-                        <Col span={24}>
+                        <Col span={24} className={classes.links_col}>
                             <Link to="/#" className={classes.links}>
-                                Boating
+                                {t('boating')}
                             </Link>
                         </Col>
-                        <Col span={24}>
+                        <Col span={24} className={classes.links_col}>
                             <Link to="/#" className={classes.links}>
-                                Cycling
+                                {t('cycling')}
                             </Link>
                         </Col>
                     </Row>
                 </Col>
                 <Col span={6}>
-                    <Row gutter={[8, 8]}>
+                    <Row className={classes.support_links}>
                         <Col span={24}>
-                            <h2 className={classes.links_header} to="/#">
-                                Support
+                            <h2 className={classes.links_header}>
+                                {t('support')}
                             </h2>
                         </Col>
-                        <Col span={24}>
+                        <Col span={24} className={classes.links_col}>
                             <Link to="/#" className={classes.links}>
-                                Help
+                                {t('help')}
                             </Link>
                         </Col>
-                        <Col span={24}>
+                        <Col span={24} className={classes.links_col}>
                             <Link to="/#" className={classes.links}>
-                                Contact us
+                                {t('contact')}
                             </Link>
                         </Col>
-                        <Col span={24}>
+                        <Col span={24} className={classes.links_col}>
                             <Link to="/#" className={classes.links}>
-                                Privacy Policy
+                                {t('privacy_policy')}
                             </Link>
                         </Col>
-                        <Col span={24}>
+                        <Col span={24} className={classes.links_col}>
                             <Link to="/#" className={classes.links}>
-                                Terms of Service
+                                {t('terms_of_service')}
                             </Link>
                         </Col>
-                        <Col span={24}>
+                        <Col span={24} className={classes.links_col}>
                             <Link to="/#" className={classes.links}>
-                                Complaints Policy
+                                {t('complaints_policy')}
                             </Link>
                         </Col>
                     </Row>
@@ -160,7 +160,7 @@ const Footer = () => {
                         size="large"
                     />
                     <Button className={classes.input_btn} size="large">
-                        Join the mailing list
+                       {t("mail_btn")}
                     </Button>
                 </Col>
             </Row>
@@ -176,7 +176,7 @@ const Footer = () => {
                     <Logo />
                 </Col>
                 <Col className={classes.copyright} span={8} align="middle">
-                    © 2023 UnwindCabins
+                    © 2023 Gullu Huseynova
                 </Col>
                 <Col span={8}>
                     <LangSwitch />
