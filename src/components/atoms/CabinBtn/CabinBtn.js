@@ -1,10 +1,16 @@
 import React from 'react'
 import { Button } from 'antd'
 import classes from './CabinBtn.module.css'
+import { useTranslation } from 'react-i18next'
+
 const CabinBtn = () => {
+    const { t } = useTranslation()
+
     return (
         <div>
-            <Button className={classes.cabin_btn}>Find avilable cabins</Button>
+            <Button className={classes.cabin_btn}>
+                {t('available_cabins')}
+            </Button>
         </div>
     )
 }

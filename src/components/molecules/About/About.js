@@ -44,7 +44,6 @@ const About = () => {
                     <img className={classes.play_icon} src={Images.play} />
                 </div>
             </Col>
-
         </Row>
     )
 }

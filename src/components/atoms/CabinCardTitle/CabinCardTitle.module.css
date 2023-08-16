@@ -30,6 +30,9 @@
     border-bottom: 2px solid #f5b963;
     margin-right: 5px;
 }
+.cabin_title h4 {
+    font-size: 16px;
+}
 
 @media (max-width: 767px) {
     .cabin_title {
@@ -37,9 +40,7 @@
         padding-top: 30px;
         text-align: center;
     }
-    .cabin_title h2 {
-        font-size: 16px;
-    }
+
     .cabin_link_wrapper {
         margin: 10px;
         justify-content: center;

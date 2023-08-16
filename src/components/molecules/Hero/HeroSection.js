@@ -5,7 +5,8 @@ import classes from './HeroSection.module.css'
 import SearchBar from '../SearchBar/SearchBar'
 import { Ratings } from '../../atoms/Ratings/Ratings'
 import { useTranslation } from 'react-i18next'
-
+import { Button } from 'antd'
+import { AiOutlineDown } from 'react-icons/ai'
 const HeroSection = () => {
     const { t } = useTranslation()
 
@@ -40,7 +41,10 @@ const HeroSection = () => {
                     alt="Hero"
                 ></img>
             </div>
-            <div className={classes.gradient}></div>
+            <span className={classes.gradient}></span>
+            <Button shape="round" href="#footer" className={classes.down_btn}>
+                <AiOutlineDown />
+            </Button>
             <SearchBar />
         </div>
     )

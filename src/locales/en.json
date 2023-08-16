@@ -49,5 +49,8 @@
     "privacy_policy": "Privacy Policy",
     "terms_of_service": "Terms of Service",
     "complaints_policy": "Complaints Policy",
-    "mail_btn":"Join the mailing list"
+    "mail_btn": "Join the mailing list",
+    "sign_up": "Sign up to our Newsletter",
+    "travellers":"Travellers",
+    "available_cabins":"Find available cabins"
 }

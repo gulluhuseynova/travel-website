@@ -35,7 +35,7 @@
 
 @media (max-width: 767px) {
     .users_img_wrapper {
-        top: 140px;
+        top: 270px;
         left: 30px;
     }
     .image_item_1,
@@ -45,7 +45,7 @@
         width: 20px;
     }
     .trust_pilot {
-        top: 140px;
+        top: 270px;
         left: 4rem;
     }
 }

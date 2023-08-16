@@ -6,7 +6,7 @@ import StarRating from '../../molecules/StarRating/StarRating'
 
 export const Ratings = () => {
     return (
-        <>
+        <div className={classes.rating_wrapper}>
             <div className={classes.users_img_wrapper}>
                 {Users.map((user, index) => (
                     <img
@@ -20,6 +20,6 @@ export const Ratings = () => {
                 <img src={Images.trustPilot}></img>
             </div>
             <StarRating />
-        </>
+        </div>
     )
 }

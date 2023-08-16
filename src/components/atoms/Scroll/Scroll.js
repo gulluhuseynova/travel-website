@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
 
-function Scroll() {
+const Scroll = () => {
     useEffect(() => {
         const handleSmoothScroll = (e) => {
             e.preventDefault()
@@ -25,7 +25,7 @@ function Scroll() {
         }
     }, [])
 
-    return null 
+    return null
 }
 
 export default Scroll

@@ -1,5 +1,4 @@
 import { DatePicker } from 'antd'
-import classes from './TimePicker.module.css'
 
 const { RangePicker } = DatePicker
 const onChange = (value, dateString) => {
@@ -16,7 +15,7 @@ const boldText = {
 }
 
 const TimePicker = () => (
-    <div style={{ display: 'flex' }} className={classes.time_picker}>
+    <div style={{ display: 'flex' }}>
         <DatePicker
             showTime={{
                 format: 'HH:mm',

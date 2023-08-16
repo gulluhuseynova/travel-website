@@ -10,7 +10,7 @@ const Footer = () => {
     const { t } = useTranslation()
 
     return (
-        <div className={classes.footer_wrapper}>
+        <div className={classes.footer_wrapper} id="footer">
             <Row className={classes.links_wrapper}>
                 <Col span={6}>
                     <Row className={classes.footer_gutter}>
@@ -152,7 +152,7 @@ const Footer = () => {
 
             <Row className={classes.second_wrapper}>
                 <Col span={12} xs={24} md={12} className={classes.input_title}>
-                    <h3>Sign up to our Newsletter</h3>
+                    <h3>{t('sign_up')}</h3>
                 </Col>
                 <Col span={12} xs={24} md={12} style={{ display: 'flex' }}>
                     <Input
@@ -160,7 +160,7 @@ const Footer = () => {
                         size="large"
                     />
                     <Button className={classes.input_btn} size="large">
-                       {t("mail_btn")}
+                        {t('mail_btn')}
                     </Button>
                 </Col>
             </Row>

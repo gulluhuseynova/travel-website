@@ -12,8 +12,8 @@
 
 @media (max-width: 767px) {
     .star_rating_wrapper {
-        top: 144px;
-        left: 170px;
+        top: 295px;
+        left: 34px;
     }
     .rating_score {
         font-size: 12px;

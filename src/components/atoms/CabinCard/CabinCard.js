@@ -6,20 +6,19 @@ const CabinCard = (props) => {
     const { infoList } = props
     console.log(infoList)
     return (
-        <Row justify="center" align="middle">
+        <Row className={classes.cabin_card_wrapper}>
             {infoList.map((item, index) => (
                 <Col
                     xs={24}
-                    sm={12}
+                    sm={24}
                     md={8}
                     lg={8}
                     xl={8}
-                    style={{ display: 'flex', justifyContent: 'center' }}
+                    className={classes.card_col}
                     key={`item-${index}`}
                 >
                     <Card
                         hoverable
-                        style={{ width: 250, minHeight: '470px' }}
                         className={classes.card_style}
                         cover={
                             <img

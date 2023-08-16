@@ -27,10 +27,16 @@ const CabinCards = () => {
             description: t(t('cabin_cards_third_description')),
             img: Images.third,
         },
+        {
+            header: t('cabin_cards_header'),
+            title: t('cabin_cards_title'),
+            description: t('cabin_cards_description'),
+            img: Images.first,
+        },
     ]
 
     return (
-        <div className={classes.wrapper} id='inspired'>
+        <div className={classes.wrapper} id="inspired">
             <CabinCardTitle />
             <CabinCard infoList={infoList} />
         </div>

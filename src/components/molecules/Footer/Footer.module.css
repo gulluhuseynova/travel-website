@@ -6,8 +6,8 @@
 }
 .links_wrapper {
     display: flex;
-    text-align: center;
     padding-top: 40px;
+    margin-left: 100px;
 }
 
 .second_wrapper {
@@ -56,6 +56,7 @@
     color: #c5fbd8;
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
+    text-align: left;
 }
 
 .links {
@@ -72,6 +73,7 @@
 .links_col {
     margin-top: 5px;
     margin-bottom: 5px;
+    text-align: left;
 }
 
 @media (max-width: 767px) {
@@ -99,6 +101,7 @@
         align-items: baseline;
         padding-top: 10px;
         grid-row-gap: 20px;
+        margin: 0;
     }
     .links_header {
         font-size: 10px;

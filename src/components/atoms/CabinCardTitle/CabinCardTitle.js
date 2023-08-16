@@ -10,7 +10,7 @@ const CabinCardTitle = () => {
         <div>
             <Row className={classes.cabin_title}>
                 <Col span={24}>
-                    <h4 className={classes.cabin_h2}>
+                    <h4>
                         <span className={classes.discover}>
                             {t('cabin_inspiration')}
                         </span>

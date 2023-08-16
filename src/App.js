@@ -13,6 +13,7 @@ import Scroll from './components/atoms/Scroll/Scroll'
 
 const App = () => {
     const { i18n } = useTranslation()
+
     useEffect(() => {
         setLangFromLocalStorage(i18n)
     }, [])
