@@ -10,19 +10,15 @@
     width: 100%;
     height: 100%;
     display: flex;
-    justify-content: flex-end;
-    background-color: black;
 }
-
-.gradient {
+.overlay {
     position: absolute;
-    z-index: 2;
-    background: linear-gradient(
-        to right,
-        rgba(0, 0, 0, 1) 45%,
-        rgba(69, 68, 68, 0) 100%
-    );
-    height: 100vh;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(9, 9, 9, 0.5);
+    pointer-events: none;
 }
 
 .row_wrapper {
@@ -58,11 +54,6 @@
     .container {
         height: 100vh;
     }
-    .gradient {
-        height: 100vh;
-        z-index: -1;
-        width: 80%;
-    }
     .img_container {
         position: absolute;
         z-index: -1;
@@ -80,13 +71,7 @@
         top: 170px;
         left: 30px;
     }
-    .gradient {
-        background: linear-gradient(
-            to right,
-            rgba(0, 0, 0, 1) 15%,
-            rgba(69, 68, 68, 0) 100%
-        );
-    }
+
     .hero_img {
         width: 100%;
         object-fit: cover;
@@ -98,6 +83,12 @@
         top: 80%;
         left: 50%;
         transform: translate(-50%, -50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100px;
+        user-select: none;
+        color: white !important;
     }
     .down_btn:focus {
         border: 1px solid white !important;
@@ -106,15 +97,28 @@
 }
 
 @media (min-width: 767px) {
-    .gradient {
-        z-index: -1;
-        width: 50%;
-    }
     .img_container {
         position: absolute;
         z-index: -1;
     }
     .container {
         height: 500px;
+    }
+    .hero_img {
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+@media (min-width: 1200px) {
+    .img_container {
+        width: 100%;
+    }
+    .overlay {
+        display: block;
+    }
+    .hero_img {
+        width: 100%;
+        object-fit: cover;
     }
 }

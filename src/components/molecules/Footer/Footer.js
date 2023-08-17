@@ -5,9 +5,31 @@ import LangSwitch from '../../atoms/LangSwitch/LangSwitch'
 import { Row, Col, Input, Button } from 'antd'
 import Logo from '../../atoms/Logo/Logo'
 import { Link } from 'react-router-dom'
+import { useState } from 'react'
 
 const Footer = () => {
     const { t } = useTranslation()
+    const [email, setEmail] = useState('')
+    const [isValidEmail, setIsValidEmail] = useState(true)
+
+    const handleEmailChange = (event) => {
+        setEmail(event.target.value)
+    }
+
+    const handleButtonClick = () => {
+        if (validateEmail(email)) {
+            alert(t('accepted'))
+            setEmail('')
+            setIsValidEmail(true)
+        } else {
+            alert(t('rejected'))
+        }
+    }
+
+    const validateEmail = (email) => {
+        const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+        return re.test(email)
+    }
 
     return (
         <div className={classes.footer_wrapper} id="footer">
@@ -158,8 +180,15 @@ const Footer = () => {
                     <Input
                         placeholder="ghuseynova.dev@gmail.com"
                         size="large"
+                        type="email"
+                        value={email}
+                        onChange={handleEmailChange}
                     />
-                    <Button className={classes.input_btn} size="large">
+                    <Button
+                        className={classes.input_btn}
+                        size="large"
+                        onClick={handleButtonClick}
+                    >
                         {t('mail_btn')}
                     </Button>
                 </Col>

@@ -51,6 +51,10 @@
     "complaints_policy": "Complaints Policy",
     "mail_btn": "Join the mailing list",
     "sign_up": "Sign up to our Newsletter",
-    "travellers":"Travellers",
-    "available_cabins":"Find available cabins"
+    "travellers": "Travellers",
+    "available_cabins": "Find available cabins",
+    "check_in": "Check in",
+    "check_out": "Check out",
+    "accepted": "Your subscription to the mailing list has been accepted.",
+    "rejected": "Please enter a valid email address."
 }

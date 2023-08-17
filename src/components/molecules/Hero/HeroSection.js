@@ -40,9 +40,9 @@ const HeroSection = () => {
                     className={classes.hero_img}
                     alt="Hero"
                 ></img>
+                 <div className={classes.overlay}></div>
             </div>
-            <span className={classes.gradient}></span>
-            <Button shape="round" href="#footer" className={classes.down_btn}>
+            <Button value="large" shape="round" href="#footer" className={classes.down_btn} disabled>
                 <AiOutlineDown />
             </Button>
             <SearchBar />
